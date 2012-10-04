@@ -1,0 +1,43 @@
+/* 
+ * - arcbam project css style v1.0
+ * http://arcbam.com
+ * Copyright (c) 2012 Mahla Delpak under MIT License.
+ * fork me on github.
+ */
+ /*-------------Global settings--------------*/
+.sidebar,.bottom,.content{
+	position: absolute;
+}
+/*-------------Sidebar Part--------------*/
+div.sidebar{
+	z-index: 12;
+	top: 0;
+	left: 0;
+}
+div.sidebar div.puzzel{
+
+}
+div.sidebar div.logo{
+	right: 100px;
+	top:200px;
+}
+/*-------------Bottom Part--------------*/
+.bottom{
+	background: url('../images/footer-bg.png') no-repeat center bottom;
+	width: 950px;
+	height:496px;
+	z-index: 11;
+	top:210px;
+	right: 0;
+	border-radius: 0 0 0 230px;
+}
+/*-------------Content Part--------------*/
+.content{
+	background: url('../images/cnt-bg.jpg') no-repeat right top;
+	width: 950px;
+	height:600px;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	border-radius: 0 0 0 230px;
+}
