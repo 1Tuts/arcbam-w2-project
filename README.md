@@ -24,5 +24,6 @@
   <li><a href="https://github.com/mahlad">Mahla Delpak</a></li>
 </ul>
 <b>All rights reserved</b>
+
   The <a href="http://arcbam.com/">Arcbam</a> website is released under a MIT License.
   Produced by 1schools students network (autumn 2012)
