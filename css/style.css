@@ -257,7 +257,7 @@ div.bottom nav ul li a:hover{
 }
 /*-------------Content Part--------------*/
 .content{
-	background:no-repeat right top;
+	background:no-repeat right top #fdfdfd;
 	width: 950px;
 	height:600px;
 	overflow: hidden;
@@ -270,4 +270,70 @@ div.bottom nav ul li a:hover{
 	width: 950px;
 	height: 650px;
 	position: absolute;
+}
+/*-------------Projects--------------*/
+div.projects{
+	width: 510px;
+	height:400px;
+	margin:40px 75px 0 0; 
+}
+div.projects section{
+	width:490px;
+	margin: 0 auto;
+	height: 300px;
+	border: 10px solid #412613;
+	position: relative;
+	overflow: hidden;
+}
+div.bigpic{
+	width: 4000px;
+	position: absolute;
+	height: 300px;
+	right: 0;
+	top: 0;
+	-webkit-transition: right 300ms ease-in-out;
+	-moz-transition: right 300ms ease-in-out;
+	-o-transition: right 300ms ease-in-out;
+}
+div.bigpic > div{
+	width: 490px;
+	height: 300px;
+	float: right;
+	background-size: cover;
+	background-repeat   : no-repeat;
+	background-position : right top;
+}
+div.bigtxt{
+	width: 4000px;
+	position: absolute;
+	height: 50px;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: right 300ms ease-in-out;
+	-moz-transition: right 300ms ease-in-out;
+	-o-transition: right 300ms ease-in-out;
+}
+div.bigtxt span{
+	width: 490px;
+	height: 50px;
+	float: right;
+	background:rgba(0,0,0,0.7) center center;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+
+}
+div.projects ul{
+	margin: 20px 10px;
+
+}
+div.projects ul li{
+	width: 75px;
+	height: 75px;
+	border: solid #412613;
+	border-width: 5px 0 5px 5px;
+	float: right;
+}
+div.projects ul li:first-child{
+	border-width: 5px;
 }
