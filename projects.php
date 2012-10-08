@@ -27,10 +27,13 @@
 				<span>this is text5</span>
 				<span>this is text6</span>
 				<span>this is text7</span>
+				<span>this is text8</span>
+				<span>this is text9</span>
 			</div>
+			<div class="clear"></div>
 		</section>
 		<section class="smallpart">
-			<ul>
+			<ul class="btn">
 				<?php 
 				$small_path='./images/projects/small';
 				$simg_arr=scandir($small_path);
