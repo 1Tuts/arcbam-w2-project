@@ -5,7 +5,7 @@
 ?>
 <div class="content">
 	<div class="projects w13 right">
-		<section>
+		<section class='bigpart'>
 			<div class="bigpic">
 				<?php 
 				$path='./images/projects';
@@ -29,14 +29,24 @@
 				<span>this is text7</span>
 			</div>
 		</section>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+		<section class="smallpart">
+			<ul>
+				<?php 
+				$small_path='./images/projects/small';
+				$simg_arr=scandir($small_path);
+				foreach ($simg_arr as $simg) {
+					$simg_type=explode('.',$simg);
+					$simg_type=strtolower(end($simg_type));
+					if($simg_type=='jpg'){
+						echo "<li style=\"background-image:url('$small_path/$simg');\"></li>";
+					}
+				}
+				 ?>
+			</ul>
+			
+		</section>
+		<div class="next btn"></div>
+		<div class="prev btn"></div>
 	</div>
 </div>
 <div class="clear"></div>
