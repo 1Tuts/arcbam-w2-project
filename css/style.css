@@ -304,7 +304,7 @@ div.bigpic > div{
 	background-position : right top;
 }
 div.bigtxt{
-	width: 4000px;
+	width: 5000px;
 	position: absolute;
 	height: 50px;
 	right: 0;
@@ -330,21 +330,21 @@ div.projects section.smallpart{
 	overflow: hidden;
 	margin: 20px 0;
 }
-section.smallpart ul{
+section.smallpart ul.btn{
 	
 	position: absolute;
 	width: 1000px;
 	height: 85px;
 	right: 0;
 }
-section.smallpart ul li{
+section.smallpart ul.btn li{
 	width: 75px;
 	height: 75px;
 	border: solid #412613;
 	border-width: 5px 0 5px 5px;
 	float: right;
 }
-section.smallpart ul li:first-child{
+section.smallpart ul.btn li:first-child{
 	border-width: 5px;
 }
 
