@@ -181,10 +181,9 @@ li.pfour{
 	background: url('../images/footer-bg.png') no-repeat center bottom;
 	width: 950px;
 	height:496px;
-	z-index: 11;
+	z-index: 8;
 	top:210px;
 	right: 0;
-	border-radius: 0 0 0 110px;
 }
 div.bottom div.logo{
 	float: left;
@@ -257,7 +256,7 @@ div.bottom nav ul li a:hover{
 }
 /*-------------Content Part--------------*/
 .content{
-	background:no-repeat right top #fdfdfd;
+	background:no-repeat right top;
 	width: 950px;
 	height:600px;
 	overflow: hidden;
@@ -274,7 +273,7 @@ div.bottom nav ul li a:hover{
 /*-------------Projects--------------*/
 div.projects{
 	width: 565px;
-	height:400px;
+	height:auto;
 	margin:40px 40px 0 0; 
 }
 div.projects section.bigpart{
@@ -336,6 +335,9 @@ section.smallpart ul.btn{
 	width: 1000px;
 	height: 85px;
 	right: 0;
+	-webkit-transition: right 300ms ease-in-out;
+	-moz-transition: right 300ms ease-in-out;
+	-o-transition: right 300ms ease-in-out;
 }
 section.smallpart ul.btn li{
 	width: 75px;
@@ -348,21 +350,21 @@ section.smallpart ul.btn li:first-child{
 	border-width: 5px;
 }
 
-div.projects div.next{
+section.smallpart div.next{
 	background: url(../images/arrow.png) no-repeat -30px 0;
 	width: 31px;
 	height:30px;
 	position: absolute;
-	right:20px;
-	top:410px;
+	right:0px;
+	top:25px;
 	opacity: 0;
 }
-div.projects div.prev{
+section.smallpart div.prev{
 	background: url(../images/arrow.png) no-repeat 0px 0px;
 	width: 30px;
 	height:30px;
 	position: absolute;
-	right:595px;
-	top:410px;
+	right:535px;
+	top:25px;
 	opacity: 0;
 }
