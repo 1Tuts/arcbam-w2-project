@@ -36,7 +36,7 @@ $(function(){
 /*-----------fadeloop slideshow on home---------*/
 
 $(function(){
-	$('div.content > div.fade').fadeLoop(1000);
+	$('div.homecontent > div.fade').fadeLoop(1000);
 });
 /*-----------Bottom Content slideshow on projects for bigpart---------*/
 $(function(){
@@ -55,8 +55,9 @@ $(function(){
 		curentminpic=0;
 		(bcsp_go2slide=function(n){
 			if(n>bcsp_total-1)n=0;
-			bcsp_pic.css({'right':-490*n+'px'});
-			bcsp_txt.css({'right':-490*n+'px'});
+			var left_pic=-490*n;
+			bcsp_pic.css({'right':left_pic+'px'});
+			bcsp_txt.css({'right':left_pic+'px'});
 			curentSlide=n;
 			//alert(n);
 		})(0);// set active of first li
@@ -81,16 +82,20 @@ $(function(){
 		
 		//button part
 		bcsp_next_minpic=function(m){
-			bcsp_minpic.css({'right':-80*m+'px'});
-			curentminpic=m;	
+			if(m==total-6)m=0
+				else 
+			if(m==-1)m=total-7
+			var right_pic=-80*m;
+			bcsp_minpic.css({'right':right_pic+'px'});
+			curentminpic=m;		
+			
+			
 		};
 		bcsp_next.click(function(){
 			bcsp_next_minpic(curentminpic+1);
-			//if(curentminpic+1)
 		});
 		bcsp_prev.click(function(){
 			bcsp_next_minpic(curentminpic-1);
-			//if(curentminpic+1)
 		});
 		bcsp_smallpart.mouseover(function(){
 			bcsp_btn.css({opacity:1});
