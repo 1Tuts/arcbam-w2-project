@@ -8,6 +8,10 @@
 .sidebar,.bottom,.content{
 	position: absolute;
 }
+body{
+	font-family:Tahoma;
+	font-size:12px !important;
+}
 /*-------------Sidebar Part--------------*/
 div.sidebar{
 	z-index: 18;
@@ -231,11 +235,9 @@ div.bottom nav ul li a{
 	color: #2f1515;
 	font-weight: bold;
 	text-align: center;
-	font-size:19px;
 }
-div.bottom nav ul li a:hover{
-
-}
+/*div.bottom nav ul li:hover{
+}*/
 /*-------------Content Part--------------*/
 .content{
 	background:no-repeat right top;
@@ -253,12 +255,18 @@ div.bottom nav ul li a:hover{
 	top: 0;
 	right: 0;
 	z-index: 8;
-	border-radius: 0 0 0 180px;
-
+	
 }
 .homecontent div.fade{
 	width: 950px;
 	height: 650px;
+}
+.homecontent div.fade img{
+	border-radius: 0 0 0 180px;
+	-moz-border-radius: 0 0 0 180px;
+	-webkit-border-radius: 0 0 0 180px;
+	-ms-border-radius: 0 0 0 180px;
+	-o-border-radius: 0 0 0 180px;
 }
 /*----------------------Projects Page--------------------*/
 div.pages{
@@ -280,6 +288,8 @@ div.bigpic{
 	-webkit-transition: right 300ms ease-in-out;
 	-moz-transition: right 300ms ease-in-out;
 	-o-transition: right 300ms ease-in-out;
+	-ms-transition: right 300ms ease-in-out;
+	transition: right 300ms ease-in-out;
 }
 div.bigpic > div{
 	width: 490px;
@@ -296,6 +306,8 @@ div.bigtxt{
 	-webkit-transition: right 300ms ease-in-out;
 	-moz-transition: right 300ms ease-in-out;
 	-o-transition: right 300ms ease-in-out;
+	-ms-transition: right 300ms ease-in-out;
+	transition: right 300ms ease-in-out;
 }
 div.bigtxt span{
 	width: 490px;
@@ -316,9 +328,11 @@ section.smallpart ul.btn{
 	width: 1000px;
 	height: 85px;
 	right: 0;
+	transition: right 300ms ease-in-out;
 	-webkit-transition: right 300ms ease-in-out;
 	-moz-transition: right 300ms ease-in-out;
 	-o-transition: right 300ms ease-in-out;
+	-ms-transition: right 300ms ease-in-out;
 }
 section.smallpart ul.btn li{
 	width: 75px;
@@ -358,21 +372,21 @@ div.marketting ul.firstrow{
 	right: 0;
 
 }
-div.marketting ul.firstrow li a{
+div.marketting ul.firstrow li{
 	z-index: 5;
 }
 div.marketting ul.secondrow{
 	top:100px;
 	right: 110px;
 }
-div.marketting ul.secondrow li a{
+div.marketting ul.secondrow li{
 	z-index: 10;
 }
 div.marketting ul.thirdrow{
 	right: 0;
 	top:210px;
 }
-div.marketting ul.thirdrow li a{
+div.marketting ul.thirdrow li{
 	z-index: 5;
 }
 div.marketting ul.fourthrow{
@@ -380,12 +394,15 @@ div.marketting ul.fourthrow{
 	right: 100px;
 
 }
-div.marketting ul.fourthrow li a{
+div.marketting ul.fourthrow li{
 	z-index: 10;
 }
 div.marketting ul li{
 	margin-right:60px;
 	cursor: pointer;
+	-webkit-transition:all 1.5s;
+	position: relative;
+	opacity: 0.9;
 
 }
 div.marketting ul li a{
@@ -394,16 +411,16 @@ div.marketting ul li a{
 	width: 145px;
 	height:115px;
 	background-color: pink;
-	position: relative;
-	opacity: 0.9;
 	display: block;
 	float: right;
 
 }
-div.marketting ul li:hover a{
+div.marketting ul li:hover{
+	-webkit-transform:rotateY(360deg);
 	z-index: 15;
 	opacity: 1;
-	
+
+
 }
 div.marketting ul li:first-child{
 	margin-right: 0;
@@ -463,6 +480,11 @@ td.submit input{
 	margin-right: 139px;
 	width: 65px;
 	height: 30px;
+	-webkit-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	-o-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	-ms-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	-moz-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	box-shadow:1px 1px rgba(75, 57, 31, 0.48);
 }
 td.cntinfo1{
 	padding-top: 15px;
@@ -496,7 +518,7 @@ div.learning{
 section.part{
 	width:290px;
 	height: 210px;
-	border-bottom: 1px groove  #3F2A16;
+	border-bottom: 1px groove  #D3AA88;
 	margin:5px 5px;
 }
 section.part div.line{
@@ -504,7 +526,7 @@ section.part div.line{
 	height: 190px;
 	margin:0 5px;
 	padding: 5px 15px;
-	border-right: 1px solid;
+	border-right: 1px groove #D3AA88;
 }
 section.right div.line{
 	border-right: 0;
@@ -521,7 +543,6 @@ section.part p.context{
 	width: 260px;
 	height: 79px;
 	color: #3F2A16 ;
-	font-size:15px;
 	line-height: 20px;	
 }
 section.part a.download{
@@ -532,8 +553,12 @@ section.part a.download{
 	line-height: 29px;
 	text-decoration: none;
 	color:#3F2A16;
-	font-size:15px;
 	border-radius: 2px;
+	-ms-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	-moz-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	-webkit-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	-o-box-shadow:1px 1px rgba(75, 57, 31, 0.48);
+	box-shadow:1px 1px rgba(75, 57, 31, 0.48);
 
 }
 section.part a.download:hover{
